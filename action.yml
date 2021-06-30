@@ -1,0 +1,18 @@
+name: "Upload file to Mega"
+author: "SiegeWizard"
+description: "Upload file to Mega"
+inputs:
+  file:
+    description: "The file to upload"
+    required: true
+outputs:
+  url:
+    description: "Url to the uploaded file"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.file }}
+branding:
+  color: "gray-dark"
+  icon: "share"
