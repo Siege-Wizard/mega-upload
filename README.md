@@ -8,7 +8,7 @@ This GitHub action allows you to upload a file to Mega.
 - name: Upload README.md
   uses: Siege-Wizard/mega-upload@1.0.1
   with:
-    file: README:md
+    file: README.md
   env:
     USERNAME: ${{ secrets.MEGA_USERNAME }}
     PASSWORD: ${{ secrets.MEGA_PASSWORD }}
