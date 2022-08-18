@@ -1,4 +1,4 @@
-FROM ubuntu:21.04
+FROM ubuntu:22.04
 
 RUN apt-get update \
     && apt-get -y install \
@@ -8,7 +8,7 @@ RUN apt-get update \
     ca-certificates \
     && update-ca-certificates \
     && curl  \
-    https://mega.nz/linux/MEGAsync/xUbuntu_21.04/amd64/megacmd-xUbuntu_21.04_amd64.deb \
+    https://mega.nz/linux/repo/xUbuntu_22.04/amd64/megacmd_1.5.1-1.1_amd64.deb \
     --output /tmp/megacmd.deb \
     && apt install /tmp/megacmd.deb -y \
     && apt-get clean \
